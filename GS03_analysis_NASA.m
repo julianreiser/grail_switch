@@ -30,7 +30,7 @@ for subj = 1:length(subjlist)
     subjnum = str2num(SUBJ);
 
     nasasubidx = find(nasarawmat(:,1) == subjnum);
-    nasatmpmat = nasarawmat(nasasubidx,26:end);
+    nasatmpmat = nasarawmat(nasasubidx,2:end);
     condcount = 1;
     % get everything into submatrices
     for cond = 1:6:length(nasatmpmat)
